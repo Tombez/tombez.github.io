@@ -1,0 +1,54 @@
+/* Thanks to http://clrs.cc/ for their appealing colors */
+
+body {
+	margin: 0px;
+	padding: 0px;
+	overflow: auto;
+	background: black;
+	color: white;
+	font-family: Ubuntu;
+	font-size: 20px;
+}
+#pageTitle {
+	color: #3D9970;
+}
+#titleSeparater {
+	height: 2px;
+	background: #3D9970;
+	border: 0px;
+	width: 90%;
+	margin: 5px 0px 5px 0px;
+}
+.project {
+	padding: 10px 0px 20px 0px;
+	text-align: center;
+	width: 400px;
+	display: inline-block;
+}
+.projTitle {
+	margin: 0px 0px 5px 0px;
+	font-size: 28px;
+	color: #0074D9;
+}
+.projImage {
+	width: 300px;
+	border: 1px solid grey;
+}
+.link {
+	color: tan;
+	text-decoration: none;
+}
+.separater {
+	height: 2px;
+	background: white;
+	border: 0px;
+	width: 80%;
+	margin: 5px 0px 5px 10%;
+}
+.bare {
+	height: 1px;
+	background: grey;
+	border: 0px;
+	width: 80%;
+	margin: 3px 0px 3px 10%;
+}
