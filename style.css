@@ -20,7 +20,7 @@ body {
 	margin: 5px 0px 5px 0px;
 }
 .project {
-	padding: 10px 0px 20px 0px;
+	padding: 10px 0px 10px 0px;
 	text-align: center;
 	width: 400px;
 	display: inline-block;
@@ -37,14 +37,6 @@ body {
 .link {
 	color: tan;
 	text-decoration: none;
-}
-.separater {
-	height: 2px;
-	background: white;
-	border: 0px;
-	width: 80%;
-	margin: 5px 0px 5px 10%;
-	display: none;
 }
 .bare {
 	height: 1px;
