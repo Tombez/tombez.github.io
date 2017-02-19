@@ -44,6 +44,7 @@ body {
 	border: 0px;
 	width: 80%;
 	margin: 5px 0px 5px 10%;
+	display: none;
 }
 .bare {
 	height: 1px;
@@ -51,4 +52,7 @@ body {
 	border: 0px;
 	width: 80%;
 	margin: 3px 0px 3px 10%;
+}
+a {
+	display: block;
 }
