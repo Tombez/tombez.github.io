@@ -11,6 +11,10 @@ body {
 }
 #pageTitle {
 	color: #3D9970;
+	font-size: 35px;
+	padding: 10px 0px;
+	font-weight: bold;
+	margin: 0px;
 }
 #titleSeparater {
 	height: 2px;
@@ -49,4 +53,5 @@ body {
 .linkPNG {
 	width: 16px;
 	margin-bottom: -2px;
+	background: tan;
 }
