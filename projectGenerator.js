@@ -3,7 +3,8 @@ var repos = [ // Title, repository name.
 	["Minesweeper", "minesweeper"],
 	["Maze Generation", "mazeGeneration"],
 	["A* Pathfinder", "aStar"],
-	["Bezier Curve", "bezierCurve"]
+	["Bezier Curve", "bezierCurve"],
+	["Project Page", "tombez.github.io"]
 ];
 
 for (var n = 0; n < repos.length; n++) {
