@@ -5,9 +5,9 @@ body {
 	padding: 0px;
 	overflow: auto;
 	background: black;
-	color: white;
 	font-family: Ubuntu;
 	font-size: 20px;
+	text-align: center;
 }
 #pageTitle {
 	color: #3D9970;
@@ -15,30 +15,26 @@ body {
 #titleSeparater {
 	height: 2px;
 	background: #3D9970;
-	border: 0px;
-	width: 90%;
-	margin: 5px 0px 5px 0px;
+	margin: 5px 0px 5px 10%;
 }
 .project {
-	padding: 10px 0px 10px 0px;
+	padding: 20px 0px;
 	text-align: center;
 	width: 400px;
 	display: inline-block;
+	margin: auto;
+	color: white;
 }
 .projTitle {
 	margin: 0px 0px 5px 0px;
 	font-size: 28px;
-	color: #0074D9;
+	color: #3D9970;
 }
-.projImage {
+img {
 	width: 300px;
 	border: 1px solid grey;
 }
-.link {
-	color: tan;
-	text-decoration: none;
-}
-.bare {
+hr {
 	height: 1px;
 	background: grey;
 	border: 0px;
@@ -46,5 +42,13 @@ body {
 	margin: 3px 0px 3px 10%;
 }
 a {
-	display: block;
+	display: inline-block;
+	color: tan;
+	text-decoration: none;
+}
+.linkPNG {
+	width: 16px;
+	height: 16px;
+	border: none;
+	margin-bottom: -2px;
 }
