@@ -30,25 +30,23 @@ body {
 	font-size: 28px;
 	color: #3D9970;
 }
-img {
+.projImage {
 	width: 300px;
 	border: 1px solid grey;
 }
-hr {
+.separator {
 	height: 1px;
 	background: grey;
 	border: 0px;
 	width: 80%;
 	margin: 3px 0px 3px 10%;
 }
-a {
+.link {
 	display: inline-block;
 	color: tan;
 	text-decoration: none;
 }
 .linkPNG {
 	width: 16px;
-	height: 16px;
-	border: none;
 	margin-bottom: -2px;
 }

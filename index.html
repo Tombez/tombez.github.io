@@ -25,7 +25,7 @@
 <body>
 
 	<h2 id="pageTitle">Github Projects by: Tom Burris</h2>
-	<hr id="titleSeparater" />
+	<hr class="separator" id="titleSeparater" />
 	
 	<br>
 	
@@ -43,10 +43,10 @@
 			project.className = "project";
 			project.innerHTML = `
 				<p class="projTitle">` + repos[n][0] + `</p>
-				<img src="./images/` + repos[n][1] + `.png"/>
-				<a href="https://tombez.github.io/` + repos[n][1] + `">Working Demo <img class="linkPNG" src="./images/link.png"/></a>
-				<hr />
-				<a href="https://github.com/tombez/` + repos[n][1] + `">Github Repository <img class="linkPNG" src="./images/link.png"/></a>
+				<img class="projImage" src="./images/` + repos[n][1] + `.png"/>
+				<a class="link" href="https://tombez.github.io/` + repos[n][1] + `">Working Demo <img class="linkPNG" src="./images/link.png"/></a>
+				<hr class="separator" />
+				<a class="link" href="https://github.com/tombez/` + repos[n][1] + `">Github Repository <img class="linkPNG" src="./images/link.png"/></a>
 			`;
 			document.body.appendChild(project);
 		}
