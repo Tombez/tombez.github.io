@@ -1,70 +1,57 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
 
 <head>
 
+	<script>
+		if (navigator.appName == 'Microsoft Internet Explorer' ||
+				!!(navigator.userAgent.match(/Trident/) ||
+				navigator.userAgent.match(/rv 11/)) ||
+				navigator.userAgent.indexOf("Edge") != -1) {
+			document.execCommand("Stop");
+			window.location = 'https://www.google.com/chrome/browser/desktop/';
+		}
+	</script>
+	
+	<meta charset="utf-8"/>
+
 	<title>Github Projects</title>
 	
-	<link rel="stylesheet" type="text/css" href="./style.css"></link>
+	<link rel="stylesheet" type="text/css" href="./style.css">
 
 </head>
 
 <body>
 
-	<center>
-		<div id="centered">
+	<h2 id="pageTitle">Github Projects by: Tom Burris</h2>
+	<hr id="titleSeparater" />
+	
+	<br>
+	
+	<script id="projectGenerator">
+		var repos = [ // Title, repository name.
+			["Snake", "snake"],
+			["Minesweeper", "minesweeper"],
+			["Maze Generation", "mazeGeneration"],
+			["A* Pathfinder", "aStar"],
+			["Bezier Curve", "bezierCurve"]
+		];
 		
-			<h2 id="pageTitle">Github Projects by: Tom Burris</h2>
-			<hr id="titleSeparater" />
-			<br>
-			
-			<div class="project">
-				<p class="projTitle">Snake</p>
-				<img class="projImage" src="./images/snake.png"/>
-				<a class="link" href="https://tombez.github.io/snake">Working Demo</a>
-				<hr class="bare" />
-				<a class="link" href="https://github.com/tombez/snake">Github Repository</a>
-			</div>
-			
-			<div class="project">
-				<p class="projTitle">Minesweeper</p>
-				<img class="projImage" src="./images/minesweeper.png"/>
-				<a class="link" href="https://tombez.github.io/minesweeper">Working Demo</a>
-				<hr class="bare" />
-				<a class="link" href="https://github.com/tombez/minesweeper">Github Repository</a>
-			</div>
-			
-			<br><br>
-			
-			<div class="project">
-				<p class="projTitle">Maze Generation</p>
-				<img class="projImage" src="./images/mazeGeneration.png"/>
-				<a class="link" href="https://tombez.github.io/mazeGeneration">Working Demo</a>
-				<hr class="bare" />
-				<a class="link" href="https://github.com/tombez/mazeGeneration">Github Repository</a>
-			</div>
-			
-			<br><br>
-			
-			<div class="project">
-				<p class="projTitle">A* Pathfinder</p>
-				<img class="projImage" src="./images/aStar.png"/>
-				<a class="link" href="https://tombez.github.io/aStar">Working Demo</a>
-				<hr class="bare" />
-				<a class="link" href="https://github.com/tombez/aStar">Github Repository</a>
-			</div>
-			
-			<div class="project">
-				<p class="projTitle">Bezier Curve</p>
-				<img class="projImage" src="./images/bezierCurve.png"/>
-				<a class="link" href="https://tombez.github.io/bezierCurve">Working Demo</a>
-				<hr class="bare" />
-				<a class="link" href="https://github.com/tombez/bezierCurve">Github Repository</a>
-			</div>
-			
-		</div>
-	</center>
+		for (var n = 0; n < repos.length; n++) {
+			var project = document.createElement("div");
+			project.className = "project";
+			project.innerHTML = `
+				<p class="projTitle">` + repos[n][0] + `</p>
+				<img src="./images/` + repos[n][1] + `.png"/>
+				<a href="https://tombez.github.io/` + repos[n][1] + `">Working Demo <img class="linkPNG" src="./images/link.png"/></a>
+				<hr />
+				<a href="https://github.com/tombez/` + repos[n][1] + `">Github Repository <img class="linkPNG" src="./images/link.png"/></a>
+			`;
+			document.body.appendChild(project);
+		}
+		document.body.removeChild(document.getElementById("projectGenerator"));
+	</script>
 
 </body>
 
