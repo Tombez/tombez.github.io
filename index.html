@@ -4,15 +4,7 @@
 
 <head>
 
-	<script>
-		if (navigator.appName == 'Microsoft Internet Explorer' ||
-				!!(navigator.userAgent.match(/Trident/) ||
-				navigator.userAgent.match(/rv 11/)) ||
-				navigator.userAgent.indexOf("Edge") != -1) {
-			document.execCommand("Stop");
-			window.location = 'https://www.google.com/chrome/browser/desktop/';
-		}
-	</script>
+	<script type="text/javascript" src="./ieTest.js"></script>
 	
 	<meta charset="utf-8"/>
 
@@ -29,29 +21,7 @@
 	
 	<br>
 	
-	<script id="projectGenerator">
-		var repos = [ // Title, repository name.
-			["Snake", "snake"],
-			["Minesweeper", "minesweeper"],
-			["Maze Generation", "mazeGeneration"],
-			["A* Pathfinder", "aStar"],
-			["Bezier Curve", "bezierCurve"]
-		];
-		
-		for (var n = 0; n < repos.length; n++) {
-			var project = document.createElement("div");
-			project.className = "project";
-			project.innerHTML = `
-				<p class="projTitle">` + repos[n][0] + `</p>
-				<img class="projImage" src="./images/` + repos[n][1] + `.png"/>
-				<a class="link" href="https://tombez.github.io/` + repos[n][1] + `">Working Demo <img class="linkPNG" src="./images/link.png"/></a>
-				<hr class="separator" />
-				<a class="link" href="https://github.com/tombez/` + repos[n][1] + `">Github Repository <img class="linkPNG" src="./images/link.png"/></a>
-			`;
-			document.body.appendChild(project);
-		}
-		document.body.removeChild(document.getElementById("projectGenerator"));
-	</script>
+	<script id="projectGenerator" src="./projectGenerator.js"></script>
 
 </body>
 
