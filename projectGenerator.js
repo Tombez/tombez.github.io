@@ -20,7 +20,7 @@ for (var n = 0; n < repos.length; n++) {
 	document.body.appendChild(project);
 	var list = document.getElementsByClassName("projImage");
 	list[list.length - 1].addEventListener("click", function(event) {
-		event.target.outerHTML = "<iframe width=300 height=169 class='projImage' src='" + event.target.nextSibling.nextSibling.href + "'></iframe>";
+		event.target.outerHTML = "<iframe width=480 height=270 class='projImage' src='" + event.target.nextSibling.nextSibling.href + "'></iframe>";
 	});
 }
 document.body.removeChild(document.getElementById("projectGenerator"));

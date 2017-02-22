@@ -22,9 +22,9 @@ body {
 	margin: 5px 0px 5px 10%;
 }
 .project {
-	padding: 20px 0px;
+	padding: 20px;
 	text-align: center;
-	width: 400px;
+	/*width: 400px;*/ width: 482px;
 	display: inline-block;
 	margin: auto;
 	color: white;
@@ -35,7 +35,7 @@ body {
 	color: #3D9970;
 }
 .projImage {
-	width: 300px;
+	width: 480px;
 	border: 1px solid grey;
 }
 .separator {
