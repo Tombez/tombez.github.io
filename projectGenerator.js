@@ -3,6 +3,7 @@ var repos = [ // Title, repository name.
 	["Maze Generation", "mazeGeneration"],
 	["A* Pathfinder", "aStar"],
 	["Minesweeper", "minesweeper"],
+	["Quadtree", "quadtree"],
 	["Bezier Curve", "bezierCurve"],
 	["Project Page", "tombez.github.io"]
 ];
