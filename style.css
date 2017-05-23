@@ -23,11 +23,7 @@ body {
 }
 .project {
 	padding: 20px;
-	text-align: center;
-	width: 482px;
 	display: inline-block;
-	margin: auto;
-	color: white;
 }
 .projTitle {
 	margin: 0px 0px 5px 0px;
@@ -36,10 +32,11 @@ body {
 }
 .projImage {
 	width: 480px;
+	height: 270px;
 	border: 1px solid grey;
 }
 .link {
-	display: inline-block;
+	display: block;
 	color: tan;
 	text-decoration: none;
 }

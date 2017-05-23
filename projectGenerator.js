@@ -1,3 +1,5 @@
+"use strict";
+
 var repos = [ // Title, repository name.
 	["Snake", "snake"],
 	["Maze Generation", "mazeGeneration"],
@@ -19,9 +21,5 @@ for (var n = 0; n < repos.length; n++) {
 		<a class="link" href="https://github.com/tombez/` + repos[n][1] + `">Github Repository <img class="linkPNG" src="./images/link.png"/></a>
 	`;
 	document.body.appendChild(project);
-	var list = document.getElementsByClassName("projImage");
-	list[list.length - 1].addEventListener("click", function(event) {
-		event.target.outerHTML = "<iframe width=480 height=270 class='projImage' src='" + event.target.nextSibling.nextSibling.href + "'></iframe>";
-	});
 }
 document.body.removeChild(document.getElementById("projectGenerator"));
