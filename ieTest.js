@@ -1,4 +1,4 @@
-if (navigator.appName == 'Microsoft Internet Explorer' || navigator.userAgent.match(/Trident/) || navigator.userAgent.match(/rv 11/) || navigator.userAgent.match(/Edge/)) {
+if (/Microsoft|MSIE|Edge|Trident|NET/.test(navigator.userAgent)) {
 	document.execCommand("Stop");
-	window.location = 'https://www.google.com/chrome/browser/desktop/';
+	window.location = "https://www.google.com/chrome/browser/desktop/";
 }
