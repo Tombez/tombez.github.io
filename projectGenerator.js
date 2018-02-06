@@ -2,6 +2,7 @@
 
 const repos = [ // Title, repository name.
     ["Color Pop", "colorPop"],
+    ["Times Tables", "timesTables"],
     ["Snake", "snake"],
     ["Maze Generation", "mazeGeneration"],
     ["A* Pathfinder", "aStar"],
@@ -17,10 +18,10 @@ for (const [title, name] of repos) {
     proj.className = "project";
     proj.innerHTML += `
         <p class="projTitle">${title}</p>
-        <img class="projImage" src="./images/${name}.png"/>
-        <a class="link" href="https://tombez.github.io/${name}">Working Demo <img class="linkPNG" src="./images/link.png"/></a>
+        <img class="projImage" src="./images/${name}.png">
+        <a class="link" href="https://tombez.github.io/${name}">Working Demo <img class="linkPNG" src="./images/link.png"></a>
         <hr class="separator">
-        <a class="link" href="https://github.com/tombez/${name}">Github Repository <img class="linkPNG" src="./images/link.png"/></a>
+        <a class="link" href="https://github.com/tombez/${name}">Github Repository <img class="linkPNG" src="./images/link.png"></a>
     `;
     frag.appendChild(proj);
 }
