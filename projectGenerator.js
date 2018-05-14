@@ -5,10 +5,11 @@ const repos = [ // Title, repository name.
     ["Times Tables", "timesTables"],
     ["Snake", "snake"],
     ["Maze Generation", "mazeGeneration"],
-    ["A* Pathfinder", "aStar"],
+    ["Shuuter", "shuuter"],
+    ["Bezier Curve", "bezierCurve"],
     ["Minesweeper", "minesweeper"],
     ["Quadtree", "quadtree"],
-    ["Bezier Curve", "bezierCurve"],
+    ["A* Pathfinder", "aStar"],
     ["Project Page", "tombez.github.io"]
 ];
 
