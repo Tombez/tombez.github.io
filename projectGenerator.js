@@ -5,6 +5,7 @@ const repos = [ // Title, repository name.
     ["Times Tables", "timesTables"],
     ["Snake", "snake"],
     ["Maze Generation", "mazeGeneration"],
+    ["Algae", "algae"],
     ["Shuuter", "shuuter"],
     ["Bezier Curve", "bezierCurve"],
     ["Minesweeper", "minesweeper"],
